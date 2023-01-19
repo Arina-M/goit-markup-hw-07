@@ -73,7 +73,85 @@
               >
             </li>
           </ul>
+          <!-- burger menu -->
+          <button
+          class="burger-menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+            <svg class="burger-menu-icon js-open-menu" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
         </div>
+
+        <div class="mobile-menu js-menu-container">
+          <div class="mobile-menu-container">
+            <button class="mobile-menu-close js-close-menu">
+              <svg class="mobile-menu-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-modal-button"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu-flex">
+              <ul class="mobile-navigation-list">
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link " href="index.html">Studio</a>
+                </li>
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link current" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile-navigation-item">
+                  <a class="mobile-navigation-link" href="/">Contacts</a>
+                </li>
+              </ul>
+              <ul class="mobile-contact-list">
+                <li class="mobile-contact__phone-item">
+                  <a href="tel:+110001111111" class="mobile-contact__phone-link link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-contact__email-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-contact__email-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="mobile-social-list">
+              <li class="team-social-item">
+                <a href="/" class="team-social-link">
+                  <svg class="mobile-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="/" class="team-social-link">
+                  <svg class="mobile-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="/" class="team-social-link">
+                  <svg class="mobile-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-item">
+                <a href="/" class="team-social-link">
+                  <svg class="mobile-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </header>
 
@@ -329,7 +407,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-div">
+          <div class="footer-div footer-container">
             <a href="./index.html" rel="noopener noreferrer nofolow" class="logo">
               <span>WEB</span>STUDIO</a>
             <p class="footer-info">
@@ -384,5 +462,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
